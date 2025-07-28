@@ -31,8 +31,8 @@
 
 ---
 
-## 📁 文件结构建议
-your_project/
+## 📁 文件结构
+roject/
 │
 ├── README.md ← 论文总览目录页
 │
