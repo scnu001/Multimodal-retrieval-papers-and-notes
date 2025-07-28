@@ -4,9 +4,9 @@
 - **作者（Authors）**: Honglin Lin, Siyu Li, Guoshun Nan, Chaoyue Tang, Xueting Wang, Jingxin Xu, Yankai Rong, Zhili Zhou, Yutong Gao, Qimei Cui, Xiaofeng Tao  
 - **年份（Year）**: 2025  
 - **会议/期刊（Venue）**: 暂未查询到正式发表记录（当前知识库中未提及该论文被 CVPR、ICCV、NeurIPS 等会议或期刊接收）  
-- **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
+- **arXiv 链接**: [arXiv:2405.19226](https://arxiv.org/abs/2405.19226)  
 - **关键词（Keywords）**: 多尺度适配器（Multi-scale Adapter）、文本引导掩码损失（Text-Guided Masking Loss）、匹配损失（Matching Loss）、内上下文对齐（Intra-Contextual Alignment）、跨上下文编码器（Inter-Context Encoder）、对比学习优化（Contrastive Learning）、双上下文对齐（Doubly Contextual Alignment）  
-- **本地 PDF**: [📂 打开 PDF](paper/XXX.pdf)  
+- **本地 PDF**: [📂 打开 PDF](paper\ContextBLIP Doubly Contextual Alignment for Contrastive Image.pdf)  
 
 ---
 

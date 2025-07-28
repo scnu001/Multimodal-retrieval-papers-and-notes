@@ -4,9 +4,9 @@
 - **作者（Authors）**: Duy-Kien Nguyen, Mahmoud Assran, Unnat Jain, Martin R. Oswald, Cees G. M. Snoek, Xinlei Chen  
 - **年份（Year）**: 2025  
 - **会议/期刊（Venue）**: 已发表于 ICLR 2025  
-- **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
+- **arXiv 链接**: [arXiv:2406.09415](https://arxiv.org/abs/2406.09415)  
 - **关键词（Keywords）**: 像素作为token（Pixels-as-tokens）、无局部性偏置（Locality-free）、位置嵌入（Learned Position Embedding）、对比学习优化（Contrastive Learning）、注意力机制（Self-Attention）、块化设计（Patchification）、像素置换（Pixel Permutation）、多尺度分析（Multi-scale Analysis）  
-- **本地 PDF**: [📂 打开 PDF](paper/XXX.pdf)  
+- **本地 PDF**: [📂 打开 PDF](paper\ColPali  Efficient Document Retrieval with Vision Language Models.pdf)  
 
 ---
 

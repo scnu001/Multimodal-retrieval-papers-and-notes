@@ -2,14 +2,14 @@
 
 - **标题（Title）**: LaTr: Layout-Aware Transformer for Scene-Text VQA  
 - **作者（Authors）**: Ali Furkan Biten, Ron Litman, Yusheng Xie, Srikar Appalaraju, R. Manmatha  
-- **年份（Year）**: 2025  
-- **会议/期刊（Venue）**: 暂未查询到正式发表记录（当前知识库中未提及该论文被 CVPR、NeurIPS、ICCV 等会议或期刊接收）  
-- **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
+- **年份（Year）**: 2022  
+- **会议/期刊（Venue）**: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (CVPR)
+- **arXiv 链接**: [arXiv:2112.12494](https://arxiv.org/abs/2112.12494)  
 - **关键词（Keywords）**:  
   - **方法名**: Layout-Aware Pre-Training (LAP), Text-Guided Masking Loss, Cross-Modal Attention Propagation  
   - **模块结构**: OCR Token Projection, 2-D Spatial Embedding, Inter-Context Encoder, Vision Transformer (ViT)  
   - **技术细节**: Layout Position Embedding, Token-Level Alignment, Vocabulary-Free Decoding, Denoising Pre-Training  
-- **本地 PDF**: [📂 打开 PDF](paper/XXX.pdf)  
+- **本地 PDF**: [📂 打开 PDF](paper\LaTr.pdf)  
 
 ---
 

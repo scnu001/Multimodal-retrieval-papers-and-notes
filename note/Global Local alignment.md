@@ -3,10 +3,10 @@
 - **标题（Title）**: GOAL: Global-local Object Alignment Learning  
 - **作者（Authors）**: Hyungyu Choi, Young Kyun Jang, Chanho Eom  
 - **年份（Year）**: 2025  
-- **会议/期刊（Venue）**: 暂未查询到正式发表记录（当前知识库中未提及该论文被 CVPR、NeurIPS、ICCV 等会议或期刊接收）  
-- **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
+- **会议/期刊（Venue）**: Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)  
+- **arXiv 链接**: [arXiv:2503.17782](https://arxiv.org/abs/2503.17782) 
 - **关键词（Keywords）**: Local Image-Sentence Matching (LISM)、Token Similarity-based Learning (TSL)、Text-Guided Masking Loss、Inter-Context Encoder、Multi-scale Adapter、Token-level Alignment、Cross-modal Attention Propagation、Contrastive Learning for Local-Global Pairs  
-- **本地 PDF**: [📂 打开 PDF](paper/XXX.pdf)  
+- **本地 PDF**: [📂 打开 PDF](paper\Global local Object Alignment Learning.pdf)  
 
 ---
 

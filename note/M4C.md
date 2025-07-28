@@ -2,9 +2,9 @@
 
 - **标题（Title）**: Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA  
 - **作者（Authors）**: Ronghang Hu, Amanpreet Singh, Trevor Darrell, Marcus Rohrbach  
-- **年份（Year）**: 2025  
-- **会议/期刊（Venue）**: 暂未查询到正式发表记录（当前知识库中未提及该论文被 CVPR、NeurIPS、ICCV 等会议或期刊接收）  
-- **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
+- **年份（Year）**: 2020  
+- **会议/期刊（Venue）**: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
+- **arXiv 链接**: [arXiv:1911.06258](https://arxiv.org/abs/1911.06258) 
 - **关键词（Keywords）**:  
   - **方法名**: Pointer-Augmented Multimodal Transformer (M4C)、Denoising Pre-Training、Vocabulary-Free Decoding  
   - **模块结构**: OCR Token Projection、2-D Spatial Embedding、Inter-Context Encoder、Vision Transformer (ViT)  

@@ -3,7 +3,7 @@
 
 - **标题（Title）**: A Survey on Multimodal Retrieval-Augmented Generation  
 - **作者（Authors）**: Trovato et al.  
-- **年份（Year）**: 2024  
+- **年份（Year）**: 2025  
 - **会议/期刊（Venue）**: 暂未查询到正式发表记录（当前知识库中未提及该论文被 CVPR、ICCV、ACL、IEEE TSP 等会议或期刊接收）  
 - **arXiv 链接**: [arXiv:2504.08748](https://arxiv.org/abs/2504.08748)  
 - **关键词（Keywords）**: 伪MRAG架构、OCR-Text Graph、跨页问题处理机制、无答案问题检测模块、向量数据库检索、对比学习优化、多模态嵌入模型、文档解析模块、多模态检索模块、生成模块  

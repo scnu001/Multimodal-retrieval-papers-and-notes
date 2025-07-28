@@ -7,7 +7,7 @@
 - **会议/期刊（Venue）**: 已发表于 ICLR 2025  
 - **arXiv 链接**: [arXiv:2410.12345](https://arxiv.org/abs/2410.12345)  
 - **关键词（Keywords）**: 像素作为token（Pixels-as-tokens）、无局部性偏置（Locality-free）、位置嵌入（Learned Position Embedding）、对比学习优化（Contrastive Learning）、注意力机制（Self-Attention）、块化设计（Patchification）、像素置换（Pixel Permutation）、多尺度分析（Multi-scale Analysis）  
-- **本地 PDF**: [📂 打开 PDF](paper/XXX.pdf)  
+- **本地 PDF**: [📂 打开 PDF](paper\An Image is Worth More Than 16×16 Patches.pdf)  
 
 ---
 
