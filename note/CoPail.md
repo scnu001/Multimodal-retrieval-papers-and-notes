@@ -1,74 +1,77 @@
 ## 📘 论文信息
 
-- **标题（Title）**: An Image is Worth More Than 16×16 Patches: Exploring Transformers on Individual Pixels  
-- **作者（Authors）**: Duy-Kien Nguyen, Mahmoud Assran, Unnat Jain, Martin R. Oswald, Cees G. M. Snoek, Xinlei Chen  
-- **年份（Year）**: 2025  
-- **会议/期刊（Venue）**: 已发表于 ICLR 2025  
-- **arXiv 链接**: [arXiv:2406.09415](https://arxiv.org/abs/2406.09415)  
-- **关键词（Keywords）**: 像素作为token（Pixels-as-tokens）、无局部性偏置（Locality-free）、位置嵌入（Learned Position Embedding）、对比学习优化（Contrastive Learning）、注意力机制（Self-Attention）、块化设计（Patchification）、像素置换（Pixel Permutation）、多尺度分析（Multi-scale Analysis）  
-- **本地 PDF**: [📂 打开 PDF](paper\ColPali  Efficient Document Retrieval with Vision Language Models.pdf)  
+- **标题（Title）**: ColPali: Efficient Document Retrieval with Vision Language Models
+- **作者（Authors）**: Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo
+- **年份（Year）**: 2024
+- **会议/期刊（Venue）**: 暂未查询到正式发表记录
+- **arXiv 链接**: 未知
+- **关键词（Keywords）**: Contextualized Late Interaction, Query-to-Page Matching, OCR-free Document Understanding, Patch-level Relevance Identification, Visual-Semantic Embedding, Multimodal Document Retrieval, Dense Passage Retrieval with Vision, Cross-modal Semantic Alignment, Document Layout Analysis, Vision-Language Model Pretraining
+- **本地 PDF**: [📂 打开 PDF](paper/ColPali Efficient Document Retrieval with Vision Language Models.pdf)
 
 ---
 
 ## 🎯 核心贡献（Contributions）
 
-1. **挑战局部性偏置的必要性**：通过实验证明，Transformer 可以直接将每个像素作为 token 处理，无需依赖传统 Vision Transformer（ViT）中的 16×16 块化设计，从而质疑局部性偏置在视觉任务中的必要性。  
-2. **跨任务有效性验证**：在监督学习（分类与回归）、自监督学习（掩码自编码）和图像生成（扩散模型）任务中，验证了无局部性偏置的 Transformer 架构的有效性。  
-3. **揭示 ViT 局部性设计的局限性**：通过像素置换实验发现，ViT 中的块化设计（Patchification）对局部性偏置的依赖远强于位置嵌入，且完全移除局部性偏置仍能取得优异性能。  
+1. 提出了ColPali框架，解决了现有文档检索系统无法有效利用文档视觉线索的局限性，能够处理包含文本、表格、图表、页面布局等视觉丰富结构的文档，突破了传统仅基于文本匹配的检索限制 
+2. 设计了基于late interaction范式的高效检索机制，实现了查询和文档标记之间的细粒度交互，同时保持了双编码器架构的离线计算和快速查询匹配优势，显著提升了检索效率 
+3. 实现了无需OCR的端到端文档理解方法，通过视觉语言模型直接处理文档图像，避免了传统PDF解析和OCR带来的信息损失和错误传播，为工业级文档检索提供了实用解决方案 
 
 ---
 
 ## 🧠 方法概览（Method Overview）
 
-- **模型结构**：  
-  - **像素级 Transformer 架构**：将图像视为无序的像素集合，每个像素作为独立 token，通过线性投影映射到隐藏维度，并附加可学习的位置嵌入。  
-  - **无局部性偏置设计**：完全移除 ViT 中的块化步骤（16×16 块投影），直接处理像素级 token，避免局部性假设。  
+- **模型结构**：
+  - 双流late interaction架构：分别处理查询文本和文档图像
+  - 视觉语言编码器：提取文档的多模态特征表示
+  - 交叉注意力机制：实现查询和文档之间的细粒度交互
 
-- **输入输出**：  
-  - **输入**：RGB 图像（如 32×32 或 224×224 分辨率）。  
-  - **输出**：根据任务类型生成分类结果、重建图像或生成新图像。  
+- **输入输出**：
+  - 输入：查询文本和文档页面图像
+  - 输出：查询-文档相关性分数，以及高亮显示的最相关文档区域
 
-- **核心模块**：  
-  - **像素投影层**：将每个像素（R, G, B）线性映射为隐藏维度向量。  
-  - **位置嵌入**：通过可学习的嵌入层为每个像素分配位置信息，不依赖 2D 网格结构。  
-  - **Self-Attention 模块**：通过全局注意力机制捕捉像素间的长距离依赖关系。  
-  - **MLP 块**：用于非线性变换和特征融合。  
+- **核心模块**：
+  - Contextualized Late Interaction：实现查询和文档标记间的细粒度交互，借鉴ColBERT思想 
+  - Patch-level Relevance Identification：识别与查询最相关的文档图像区域（高亮区域）
+  - OCR-free Document Understanding：无需传统OCR即可理解文档内容的机制
+  - Document Layout Analysis：分析并利用文档的布局结构信息进行检索
 
-- **损失函数 / 训练策略**：  
-  - **监督学习**：交叉熵损失（分类）或均方误差（回归）。  
-  - **自监督学习（MAE）**：掩码重建损失（像素级回归）。  
-  - **图像生成**：扩散模型的负对数似然损失。  
+- **损失函数 / 训练策略**：
+  - Pairwise Cross-Entropy Loss：用于对比学习，优化查询-文档匹配 
+  - In-batch Contrastive Loss：拉近正样本对，推开负样本对，增强表示判别性
+  - 多任务训练：同时优化检索任务和文档理解任务
+  - LoRA微调：使用低秩适应技术高效微调大型视觉语言模型 
 
-- **其他创新点**：  
-  - **字典化 ViT 变体**：利用像素强度值的有限词汇量（256³）设计非参数嵌入，减少词汇量。  
-  - **像素置换实验**：通过随机置换像素验证局部性偏置对性能的影响。  
+- **其他创新点**：
+  - 提出了查询到页面的匹配机制，能够直接评估整个文档页面与查询的相关性
+  - 通过视觉-语义嵌入实现了跨模态对齐，充分利用文档的视觉布局和语义内容
+  - 设计了高效的索引和检索机制，满足实际工业应用的性能和延迟要求
+  - 在多个领域构建了专门的基准测试，评估模型在学术和实际工业场景中的表现
 
 ---
 
 ## 📊 实验与结果（Experiments）
 
-- **数据集**：  
-  - **CIFAR-100**：32×32 分辨率，100 类图像分类。  
-  - **ImageNet**：224×224 分辨率，1000 类图像分类。  
-  - **Oxford-102-Flowers**：细粒度分类任务。  
-  - **NYU-v2**：深度估计回归任务。  
-  - **ImageNet（生成任务）**：基于扩散模型的图像生成。  
+- **数据集**：
+  - DocVQA：工业文档上的视觉问答数据集，用于评估文档理解能力
+  - InfoVQA：信息图表上的视觉问答数据集，包含丰富视觉元素 
+  - TAT-DQA：包含多种模态（文本、图表、表格）的多样化数据集
+  - arXiVQA：科学图表上的视觉问答数据集，基于arXiv论文 
+  - TabFQuAD：法语表格问答数据集，用于评估表格理解能力
 
-- **对比方法**：  
-  - **ViT 基线**：使用 2×2 或 16×16 块化的标准 ViT 变体（ViT-T/2, ViT-S/2, ViT-B/2）。  
-  - **无局部性偏置 ViT**：像素级 Transformer（ViT-T/1, ViT-S/1, ViT-B/1）。  
-  - **扩散模型基线**：DiT-L/2（块化设计）与 DiT-L/1（像素级设计）。  
+- **对比方法**：
+  - BM25：传统的基于词频的稀疏检索方法
+  - BGE-M3：先进的多语言密集编码器，用于文本嵌入
+  - Unstructured：工业级PDF解析工具，用于构建高质量文本块
+  - OCR-based方法：基于OCR的传统文档检索方法
 
-- **性能指标**：  
-  - **分类任务**：  
-    - **CIFAR-100**：ViT-T/1 达到 85.1% Acc@1，优于 ViT-T/2 的 83.6%。  
-    - **ImageNet**：ViT-S/1 达到 74.1% Acc@1，优于 ViT-S/2 的 72.9%。  
-  - **深度估计**：ViT-S/1 的 RMSE 为 0.72，优于 ViT-S/2 的 0.80。  
-  - **图像生成**：DiT-L/1 在 FID 指标上达到 4.05，优于 DiT-L/2 的 4.16。  
+- **性能指标**：
+  - NDCG@5：评估检索结果排序质量的主要指标
+  - Recall@K：评估前K个检索结果中包含相关文档的比例
+  - MRR：平均倒数排名，评估检索结果的排序质量
+  - 查询延迟：评估系统响应速度，满足工业级RAG应用需求
 
-- **消融实验**：  
-  - **位置嵌入影响**：移除位置嵌入后，ViT-B/1 的 Acc@1 仅下降 1.5%（82.8% → 81.2%）。  
-  - **像素置换实验**：当置换 25K 像素对时，ViT-B 的 Acc@1 下降至 57.6%，表明块化设计对局部性偏置的强依赖。  
-  - **字典化 ViT**：非参数嵌入的 ViT-B/1 在 ImageNet 上达到 76.6% Acc@1，优于默认 ViT-B/1 的 76.1%。  
-
----
+- **消融实验**：
+  - late interaction机制有效性：验证了细粒度交互对检索性能的贡献
+  - 视觉特征重要性：分析了不同视觉组件对最终性能的影响
+  - 多模态融合策略：测试了不同视觉-文本融合方法的效果
+  - 工业约束下的性能：评估了在实际工业环境中的表现，包括查询延迟和索引吞吐量 
