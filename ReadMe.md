@@ -24,7 +24,13 @@
 |TokLIP: Marry Visual Tokens to CLIP for Multimodal Comprehension and Generation|Discrete-to-Continuous Visual Tokenizer, Vector-Quantized (VQ) Token Semanticization, CLIP-Level Semantic Integration, Multimodal Comprehension-Generation Disentanglement, End-to-End Autoregressive Training, Semanticized VQ Tokens, Token-CLIP Fusion Mechanism, Multimodal Understanding Enhancement, Visual Token Quantization, Token-level Semantic Alignment|[📘](note/ToKLIP.md)|  
 |ViSTA: Vision and Scene Text Aggregation for Cross-Modal Retrieval|Scene Text Aware Cross-modal Retrieval, Vision and Scene Text Aggregation, Full Transformer Architecture, Scene Text Semantics Integration, Cross-modal Entity Alignment, Text-Visual Feature Fusion, Scene Text Graph, Text-guided Attention Mechanism, Multi-granularity Text Representation, OCR-Text Graph|[📘](note/ViSTA.md)|  
 |Visual-Linguistic Dependency Encoding for Image-Text Retrieval| Visual-Linguistic Dependency Encoding, Linguistic Dependency Information, Cross-modal Semantic Alignment, Image-Text Retrieval, Dependency Structure Modeling, Visual Region Interaction, Multi-granular Semantic Enhancement, Direction-Oriented Embedding, Context-aware Multi-view Summarization, Directional Visual-Semantic Embedding|[📘](note/Visual-Linguistic dependency.md)|  
+|Efficient Large Language Models: A Survey|Model Compression, Unstructured Pruning, Knowledge Distillation, Prompt Tuning, Memory-Efficient Fine-Tuning, Speculative Decoding, KV-Cache Optimization, Sharing-based Attention, MQA (Multi-Query Attention), GQA (Grouped-Query Attention), Performer, RFA (Random Features Attention), Low-Rank Approximation|[📘](note/Efficient_Attention_Survey.md)| 
+|ALPS: Attention Localization and Pruning Strategy for Efficient Alignment of Large Language Models| Task-specific attention heads localization, Attention head pruning, Parameter-efficient fine-tuning, Transferable task-specific heads, Knowledge forgetting mitigation, Layer consistency selection, QKV weight matrices|[📘](note/Attention_Localization_and_Pruning_Strategy.md)|  
+|How LLMs and Humans Trade Compression for Meaning|Semantic Compression, Conceptual Structures, Cognitive Manageability, Token-to-Thought Mapping, Fine-grained Semantic Nuances, Category Abstraction, Pattern Matching Limitations, Semantic Richness, Conceptual Alignment, Compression-Generation Tradeoff|[📘](note/Trade_Compression_for_Meaning.md)|  
 |------|------|[📘]()|  
+|------|------|[📘]()|  
+
+
 
 
 
