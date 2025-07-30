@@ -27,8 +27,21 @@
 |Efficient Large Language Models: A Survey|Model Compression, Unstructured Pruning, Knowledge Distillation, Prompt Tuning, Memory-Efficient Fine-Tuning, Speculative Decoding, KV-Cache Optimization, Sharing-based Attention, MQA (Multi-Query Attention), GQA (Grouped-Query Attention), Performer, RFA (Random Features Attention), Low-Rank Approximation|[📘](note/Efficient_Attention_Survey.md)| 
 |ALPS: Attention Localization and Pruning Strategy for Efficient Alignment of Large Language Models| Task-specific attention heads localization, Attention head pruning, Parameter-efficient fine-tuning, Transferable task-specific heads, Knowledge forgetting mitigation, Layer consistency selection, QKV weight matrices|[📘](note/Attention_Localization_and_Pruning_Strategy.md)|  
 |How LLMs and Humans Trade Compression for Meaning|Semantic Compression, Conceptual Structures, Cognitive Manageability, Token-to-Thought Mapping, Fine-grained Semantic Nuances, Category Abstraction, Pattern Matching Limitations, Semantic Richness, Conceptual Alignment, Compression-Generation Tradeoff|[📘](note/Trade_Compression_for_Meaning.md)|  
+|Fine-Grained Visual Recognition: A Comprehensive Survey|Salient Feature Detection, Self-Boosting Attention Mechanism, Multi-View Active Recognition, Vocabulary-Free Recognition, Generative Class Prompt Learning, Semantic Category Reasoning, Low-Data Regimes Adaptation, Image-Specific Text Generation, Vision-Language Foundation Models, Fine-Grained Semantic Concept Evaluation|[📘](note/Fine-Grained_Visual_Recognition.md)|  
+|Harnessing Frozen Unimodal Encoders for Flexible Multimodal Alignment|Frozen Unimodal Encoder Alignment, Projector Training Strategy, Text-aligned Visual Tokenization, Zero-shot Domain Transfer Optimization, Multilingual Vision-Language Alignment, Data-efficient Contrastive Learning, Compute-efficient Multimodal Training, Embedding Space Harmonization, Weakly-supervised Contrastive Pre-training, Vision-Language Foundation Models|[📘](note/Harnessing_Frozen_Unimodal_Encoders.md)|  
+|MoCa: Modality-aware Continual Pre-training Makes Better Bidirectional Multimodal Embeddings|Modality-aware Continual Pre-training, Bidirectional Multimodal Embeddings, Text-aligned Visual Tokenization, Multi-stage Contrastive Learning, Cross-modal Alignment, Multimodal Retrieval Optimization, Synthetic Data Augmentation, Modality-specific Adaptation, Embedding Space Harmonization, Weakly-supervised Contrastive Learning|[📘](note/Modality-aware_Continual_Pre-training.md)|  
+|Vision as LoRA: Parameter-Efficient Visual Tuning for Multimodal Foundation Models|Vision as LoRA (VoRA), Low-Rank Adaptation for Vision, Parameter-efficient Visual Tuning, Image-Text Data Mixture, Forgetting Issue Mitigation, Vision-Language Foundation Models, Multimodal Embedding Alignment, Visual Tokenization Strategy, Cross-modal Alignment Optimization, Task-specific Visual Adapter|[📘](note/Vision_as_LoRA.md)|  
+|Each to Their Own: Exploring the Optimal Embedding in RAG|Confident RAG, Mixture-Embedding RAG, Embedding Model Ensemble, Standardized Similarity Scoring, Domain-specific Embedding, Confidence-based Response Generation, Prior Domain Alignment, Multi-Embedding Fusion, Retrieval Consistency, Embedding Specialization|[📘](note/Optimal_Embedding.md)|  
 |------|------|[📘]()|  
 |------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+|------|------|[📘]()|  
+
 
 
 

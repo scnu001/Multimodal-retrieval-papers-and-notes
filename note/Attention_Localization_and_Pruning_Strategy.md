@@ -4,7 +4,7 @@
 - **作者（Authors）**: X Wang, L Gao, H Wang, Y Zhang, J Zhao
 - **年份（Year）**: 2024
 - **会议/期刊（Venue）**: 暂未查询到正式发表记录
-- **arXiv 链接**: 未知
+- **arXiv 链接**: [arXiv:2505.18799](https://arxiv.org/abs/2505.18799)
 - **关键词（Keywords）**: Task-specific attention heads localization, Attention head pruning, Parameter-efficient fine-tuning, Transferable task-specific heads, Knowledge forgetting mitigation, Layer consistency selection, QKV weight matrices
 - **本地 PDF**: [📂 打开 PDF](paper/Attention_Localization_and_Pruning_Strategy.pdf)
 

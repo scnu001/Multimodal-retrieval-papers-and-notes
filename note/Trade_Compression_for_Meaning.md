@@ -2,9 +2,9 @@
 
 - **标题（Title）**: How LLMs and Humans Trade Compression for Meaning
 - **作者（Authors）**: 研究团队来自斯坦福大学和纽约大学(Stanford & NYU)
-- **年份（Year）**: 2024
+- **年份（Year）**: 2025
 - **会议/期刊（Venue）**: 暂未查询到正式发表记录
-- **arXiv 链接**: [arXiv:2405.17117](https://arxiv.org/abs/2405.17117)
+- **arXiv 链接**: [arXiv:2505.17117](https://arxiv.org/abs/2505.17117)4
 - **关键词（Keywords）**: Semantic Compression, Conceptual Structures, Cognitive Manageability, Token-to-Thought Mapping, Fine-grained Semantic Nuances, Category Abstraction, Pattern Matching Limitations, Semantic Richness, Conceptual Alignment, Compression-Generation Tradeoff
 - **本地 PDF**: [📂 打开 PDF](paper/Trade_Compression_for_Meaning.pdf)
 
